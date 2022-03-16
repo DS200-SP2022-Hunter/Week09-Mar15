@@ -1,4 +1,4 @@
-# Lab Assignment 08, Due on [Canvas](https://psu.instructure.com/courses/2174978/), Mar. 23 at 11:59pm
+# Lab Assignment 08, Due on [Canvas](https://psu.instructure.com/courses/2174978/assignments/13876089), Mar. 23 at 11:59pm
 ## Estimate Gender Difference in Mean Finishing Time for 5K Road Races
 
 The main objective of today's lab is to use a dataset gleaned from publicly-available data to give an estimate with a confidence interval obtained via bootstrapping.
@@ -42,6 +42,8 @@ def one_bootstrap_mean_difference():
 8. Discuss which population you think the statement in step 7 might be valid for.  In other words, what populuation do you think our original sample can reasonably be assumed to represent?
 
 9. _(Optional, for an extra point):_ The original dataset covers two different races, the First Night 5K and the Arts Festival 5K.  There are 24 people who ran both of them.  Create a new dataset with these 24 people, and give a bootstrapped 95% confidence interval for the mean difference between an individual's First Night finishing time and that individual's Arts Fest finishing time.  As above, discuss which population you think this result might apply to.
+
+10.  Finally, make sure that your Jupyter notebook only includes code and text that is relevant to this assignment.  For instance, if you have been completing this assignment by editing the original code from Section 13.2, make sure to delete the material that isn't relevant before turning in your work.
 
 When you've completed this, you should select "Print" from the File menu, then save to pdf using this option.  The pdf file that you create in this way is the file that you should upload to Canvas for grading.  We have found that if you can select the "A3" paper size from the advanced options, this seems to solve the problems that are sometimes encountered in this step.
 
