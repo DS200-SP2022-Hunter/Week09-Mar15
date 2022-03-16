@@ -16,7 +16,7 @@ population parameter (&mu;<sub>F</sub> – &mu;<sub>M</sub>), the difference bet
 
 2. Read the dataset from the `FiveKResults.csv` file as a `Table` object and give it a name like `fiveK`.  For this purpose, use the `read_table` method as in the first code block of Section 13.2.1.
 
-3. You can use the `sample()` method with no arguments to accomplish the bootstrapping, just as in Section 13.2.6.  However, there is a subtle point in this case:  We should make sure that each bootstrap sample has the same number of females as the original, since we're finding the difference of two sample means (one female, one male) and the sample sizes are important in determining the behavior of sample means.  Therefore, you'll want to create two separate Tables, one for females and one for males.  You can use code such as this:
+3. Just as in Section 13.2.6, it will be possible to use the `sample()` method with no arguments to accomplish the bootstrapping.  However, there is a subtle point in this case:  We should make sure that each bootstrap sample has the same number of females as the original, since we're finding the difference of two sample means (one female, one male) and the sample sizes are important in determining the behavior of sample means.  Therefore, you'll want to create two separate Tables, one for females and one for males.  You can use code such as this:
 ```
 fiveK_Male = fiveK.where('Identifies As Female', False)
 fiveK_Female = fiveK.where('Identifies As Female', True)
